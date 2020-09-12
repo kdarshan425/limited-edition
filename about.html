@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LE | ABOUT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/logo3.png">
+    </head>
+    <body>
+        <section>
+            <header>
+                <nav style="background:white;">
+                <div class="topnav " id="myTopnav">
+                    <a href="index.html" style="float:left;font-family: 'Raleway', sans-serif;"><b>LIMITED EDITION</b></a>
+                    <a style="height: 60px;"></a>   
+                    <a class="jk" href="index.html">HOME</a>
+                    <a class="jk" href="contact.html">CONTACT</a> 
+                    <a class="jk"  onclick="opensignup()">SIGN UP</a>
+                    <a class="jk"  onclick="openlogin()">LOGIN</a>                    
+                                       
+                    <a href="javascript:void(0);" class="icon"  onclick="myFunction1()">
+                    <i class="fa fa-bars"></i>
+                    </a>                
+                </div>
+             </nav>
+            </header>
+             
+        </section>
+        <!--login form-->  
+            <div id="id01" class="modal">  
+                <form class="modal-content" action="" method="post">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="container1">
+                    <center><h1>LOGIN</h1></center>
+            
+                    <label for="uname"><b>USERNAME</b></label>
+                    <input type="text" placeholder="USERNAME" name="uname" required>
+
+                    <label for="password"><b>PASSWORD</b></label>
+                    <input type="password" placeholder="PASSWORD" name="password" required>
+                
+                    <div class="downp" style="padding-bottom: 50px; padding-top: 20px;">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="color: white ">CANCLE</button>
+                        <button type="submit" class="signupbtn" onclick="alert('SUCCESSESFULLY LOGGED IN');document.getElementById('id01').style.display='none'" style="color: white ">LOGIN</button>
+                    </div>
+                </div>
+                </form>
+            </div>  
+            <!--//login form-->  
+
+            <!--signup form-->
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="">
+                <div class="container2">
+                    <h1>SIGNUP</h1>
+                    <label for="email"><b>EMAIL</b></label>
+                    <input type="text" placeholder="ENTER YOUR EMAIL" name="email" required>
+
+                    <label for="password"><b>PASSWORD</b></label>
+                    <input type="password" placeholder="ENTER PASSWORD" name="password" required>
+
+                    <label for="mobile_number"><b>MOBILE NUMBER</b></label>
+                    <input type="number" placeholder="MOBILE NUMBER" name="mobile_number" required>
+
+                    <div class="downp" style="padding: 20px;">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">CANCLE</button>
+                        <button type="submit" class="signupbtn" onclick="alert('You are signed up successfully');document.getElementById('id02').style.display='none'">SIGN UP</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!--//signup form-->
+        <section id="about" style="padding-top: 70px; padding-bottom: 30px;height: 200vh" >
+            <h1 style="padding: 20px; text-align: center;color: #ccc; font-weight: 500; font-size: 50px; font-family: 'Raleway', sans-serif;">ABOUT US</h1>
+            <div style="padding: 20px; text-align: center">
+                <img src="img/abt.jpg" class="abtimg" >
+            </div>
+            <div style="width: 100%;padding: 20px; float: left;">
+                <h3 style="font-family: 'Raleway', sans-serif;">
+                <i style=" font-weight: 700;font-size: 50px;">H</i>ello world!! We are team limited edition , We sell Life style!! You will get only Premium products here. Darshan khope is the Owner of this site . This is a internship project of web development . This project is created with the help of CSS , HTML & JavaScript or we also say that this is completely made from scratch !! Thank You for reading the whole information . Hope you'll find this site good !!
+                </h3>
+                <h2 class="ah2">DEVELOPED BY : DARSHAN SUBHASH KHOPE <br> EMAIL : kdarshan425@gmail.com <br> CONTACT NO : 9999999999 <br> ADDRESS: PUNE, MAHARASHTRA, INDIA  </h2>
+            </div>                 
+        </section>
+        <footer class="container" style="background: black;padding: 24px; width: 100%">
+            <center>
+                <p style="color: white;font-family: 'Raleway', sans-serif;font-weight: 300;">Powered by Darshan Khope<br>Kindly mail at kdarshan425@gmail.com</p>
+            </center>            
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
